@@ -1,0 +1,2 @@
+{{- $base := .Site.Params.imageBaseURL -}}
+<img src="{{ $base }}/{{ .Get 0 }}" alt="{{ .Get 1 | default "image" }}">
