@@ -1,0 +1,11 @@
+# Hugo build output
+public/
+
+# OS 관련
+.DS_Store
+
+# Hugo cache
+resources/_gen/
+
+# 기타
+hugo_stats.json
