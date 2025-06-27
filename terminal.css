@@ -24,7 +24,7 @@ html {
   padding: 0;
 }
 
-body {
+/* body {
   font-family:
     "Fira Code",
     "JetBrains Mono",
@@ -43,7 +43,7 @@ body {
   -webkit-text-size-adjust: 100%;
   margin: 0;
   padding: 0;
-}
+} */
 
 h1 {
   font-size: calc(var(--font-size) * 1.45);
@@ -230,7 +230,7 @@ figure figcaption {
 
 ul,
 ol {
-  margin-left: 4ch;
+  margin-left: 2ch;
   padding: 0;
 }
 
@@ -389,9 +389,59 @@ button {
 }
 
 /* font 추가 */
-body,
 code,
 kbd,
 pre {
   font-family: "IBM Plex Sans KR", sans-serif !important;
+}
+
+body {
+  font-family: 'IBM Plex Sans KR', sans-serif !important;
+  font-size: 1.125rem; /* 18px */
+  line-height: 1.75;
+  letter-spacing: 0.01em;
+  word-spacing: 0.05em;
+  color: #333;
+  background-color: #fff;
+  padding: 1rem;
+}
+
+/* 문단 간격 */
+p {
+  margin-bottom: 1rem;
+}
+
+/* 리스트 스타일 */
+ul,
+ol {
+  margin-bottom: 1rem;       /* 리스트 아래 간격 */
+  padding-left: 1.2rem;      /* 들여쓰기 조절 */
+}
+
+li {
+  margin-bottom: 0.25rem;
+  line-height: 1.6;
+}
+
+li > p {
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
+}
+
+ol > li,
+ul > li {
+  margin-bottom: 1.2rem;
+}
+
+/* 중첩 리스트 항목 간격 */
+li > ol > li,
+li > ul > li {
+  margin-bottom: 0.5rem;
+}
+
+/* 중첩 리스트와 상위 항목 간 여백 */
+li > ol,
+li > ul {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
