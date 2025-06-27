@@ -3,3 +3,21 @@ To add an extended head section, please create
 `layouts/partials/extended_head.html` in your Hugo directory.
 -->
 <link rel="stylesheet" href="{{ "terminal.css" | absURL }}">
+
+
+<!-- KaTeX Styles -->
+<link rel="stylesheet" href="{{ "katex/katex.min.css" | absURL }}">
+
+<!-- KaTeX Scripts -->
+<script src="/katex/katex.min.js"></script>
+<script src="/katex/auto-render.min.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    renderMathInElement(document.body, {
+      delimiters: [
+        { left: "$$", right: "$$", display: true },
+        { left: "$", right: "$", display: false }
+      ]
+    });
+  });
+</script>
